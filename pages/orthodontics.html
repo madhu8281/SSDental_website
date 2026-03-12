@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Straighter Smiles - Dr. SS Dental Care</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="stylesheet" href="../css/pages.css"/>
+</head>
+<body>
+  <div class="utility-bar"><div class="utility-inner"><span class="utility-hours"><i class="fas fa-clock"></i> Mon-Sat 09:00am - 09:00pm | Sunday Closed</span><div class="utility-links"><a href="tel:+918884645500"><i class="fas fa-phone-alt"></i> +91 8884645500</a><a href="https://wa.me/918884645500" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a><a href="mailto:info@drssdental.com"><i class="fas fa-envelope"></i> info@drssdental.com</a></div></div></div>
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="../index.html" class="brand"><img src="../assets/logo.png" alt="Logo" class="brand-logo"/><div class="brand-text"><strong>Dr. SS Dental Care</strong><em>Advanced Dental Implant Center</em></div></a>
+      <nav class="main-nav" id="mainNav"><ul class="nav-list"><li><a href="../index.html" class="nav-link">Home</a></li><li class="has-drop"><a href="services.html" class="nav-link active">Services <i class="fas fa-chevron-down nav-caret"></i></a><div class="mega-drop"><div class="mega-inner">
+          <div class="mega-col"><h6>Implant Dentistry</h6><a href="dental-implants.html">Dental Implant</a><a href="dental-implants.html">24-72 Hours Dental Implants</a><a href="services.html">Bridges Dentistry</a></div>
+          <div class="mega-col"><h6>Cosmetic</h6><a href="smile-designing.html">Smile Designing</a><a href="services.html">Dental Laminates</a><a href="services.html">Cosmetic Dentistry</a></div>
+          <div class="mega-col"><h6>Orthodontics</h6><a href="orthodontics.html">Orthodontics</a><a href="services.html">Clear Aligners</a><a href="services.html">Deep Bite</a></div>
+          <div class="mega-col"><h6>General Care</h6><a href="root-canal.html">Root Canal</a><a href="services.html">Extraction</a><a href="services.html">General Dentistry</a><a href="services.html">Pediatric Dentistry</a></div>
+        </div></div></li><li class="has-drop"><a href="about.html" class="nav-link">About <i class="fas fa-chevron-down nav-caret"></i></a><div class="slim-drop"><a href="about.html">About Clinic</a><a href="dr-shahul.html">Dr. Shahul</a></div></li><li class="has-drop"><a href="team.html" class="nav-link">Our Team <i class="fas fa-chevron-down nav-caret"></i></a><div class="slim-drop"><a href="dr-shahul.html">Dr. Shahul - Clinical Director</a><a href="team.html">All Specialists</a></div></li><li class=""><a href="gallery.html" class="nav-link">Gallery</a></li><li class=""><a href="blog.html" class="nav-link">Blog</a></li><li class=""><a href="contact.html" class="nav-link">Contact</a></li></ul></nav>
+      <div class="header-ctas"><a href="tel:+918884645500" class="cta-call"><i class="fas fa-phone-alt"></i> Call Now</a><a href="appointment.html" class="cta-book">Book Appointment</a></div>
+      <button class="hamburger" id="hamburger" onclick="toggleNav()"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="page-hero"><div class="page-hero-inner"><div class="section-eyebrow">Orthodontics and Clear Aligners</div><h1></h1><nav class="breadcrumb"><a href="../index.html">Home</a><span>/</span><a href="services.html">Services</a><span>/</span>Orthodontics</nav></div></div>
+  <section class="page-section">
+    <div class="section-wrap">
+      <div class="service-detail-grid">
+        <div class="service-content">
+          <img src="https://drssdental.com/images/services/slider/Orthodontics.webp" alt="Orthodontics" class="rounded-img" style="margin-bottom:32px" onerror="this.src='https://via.placeholder.com/800x380/111/fff?text=Orthodontics'"/>
+          <h3>What is Orthodontic Treatment?</h3>
+          <p>Orthodontics corrects misaligned teeth and jaws. Straight teeth are easier to clean, look better, and function more effectively — improving both oral health and confidence.</p>
+          <h3>Our Orthodontic Services</h3>
+          <ul><li>Traditional metal braces - reliable, effective, affordable</li><li>Ceramic braces - tooth-colored for a subtler look</li><li>Clear aligners - removable, nearly invisible trays</li><li>Lingual braces - fitted behind the teeth</li><li>Retainers for post-treatment maintenance</li><li>Treatment for deep bite, open bite, spacing, and crowding</li></ul>
+          <h3>Clear Aligners</h3>
+          <p>Custom transparent trays that gradually shift teeth. Removable, making eating and brushing easy. Treatment typically takes 6-18 months.</p>
+          <h3>Who Can Benefit?</h3>
+          <p>Both children and adults benefit. Ideal age is 10-14 years, but adults can be successfully treated at any age.</p>
+        </div>
+        <div class="sidebar-appt">
+          <h4>Book a Consultation</h4>
+          <input type="text" placeholder="Your Full Name"/>
+          <input type="tel" placeholder="Phone Number"/>
+          <select><option>Orthodontics</option><option>Clear Aligners</option><option>Other</option></select>
+          <textarea rows="3" placeholder="Questions about braces or aligners?"></textarea>
+          <button class="btn-submit" onclick="submitSidebarForm(this)">Request Appointment <i class="fas fa-paper-plane"></i></button>
+          <div class="sidebar-contact"><strong>Or call us directly</strong><a href="tel:+918884645500"><i class="fas fa-phone-alt"></i> +91 8884645500</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="footer-wrap">
+      <div class="footer-col brand-col"><div class="footer-brand"><img src="../assets/logo.png" alt="Logo"/><span>Dr. SS Dental Care</span></div><p>Advanced Dental Implant Center committed to the highest quality care.</p><div class="footer-hours"><strong>Working Hours</strong><span>Mon - Sat: 09:00am - 09:00pm</span><span>Sunday: Closed</span></div></div>
+      <div class="footer-col"><h6>Quick Links</h6><ul><li><a href="../index.html">Home</a></li><li><a href="about.html">About Clinic</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li><li><a href="appointment.html">Appointment</a></li></ul></div>
+      <div class="footer-col"><h6>Services</h6><ul><li><a href="dental-implants.html">Dental Implant</a></li><li><a href="root-canal.html">Root Canal</a></li><li><a href="smile-designing.html">Smile Designing</a></li><li><a href="orthodontics.html">Orthodontics</a></li><li><a href="services.html">All Services</a></li></ul></div>
+      <div class="footer-col"><h6>Contact</h6><div class="footer-contact"><i class="fas fa-map-marker-alt"></i><span>#535, 23rd Main Rd, HSR Layout, Bengaluru 560102</span></div><div class="footer-contact"><i class="fas fa-phone-alt"></i><a href="tel:+918884645500">+91 8884645500</a></div><div class="footer-contact"><i class="fab fa-whatsapp"></i><a href="https://wa.me/918884645500" target="_blank">WhatsApp Us</a></div></div>
+    </div>
+    <div class="footer-bottom"><span>2025 Dr. SS Dental Care. All Rights Reserved.</span><span>Designed by <a href="#">Endurance Tech</a></span></div>
+  </footer>
+  <a href="https://wa.me/918884645500" class="wa-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  <script src="../js/pages.js"></script>
+</body></html>

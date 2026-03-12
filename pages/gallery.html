@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery – Dr. SS Dental Care</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="stylesheet" href="../css/pages.css"/>
+</head>
+<body>
+  <div class="utility-bar"><div class="utility-inner"><span class="utility-hours"><i class="fas fa-clock"></i> Mon–Sat 09:00am – 09:00pm | Sunday Closed</span><div class="utility-links"><a href="tel:+918884645500"><i class="fas fa-phone-alt"></i> +91 8884645500</a><a href="https://wa.me/918884645500" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a><a href="mailto:info@drssdental.com"><i class="fas fa-envelope"></i> info@drssdental.com</a></div></div></div>
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="../index.html" class="brand"><img src="../assets/logo.png" alt="Logo" class="brand-logo"/><div class="brand-text"><strong>Dr. SS Dental Care</strong><em>Advanced Dental Implant Center</em></div></a>
+      <nav class="main-nav" id="mainNav"><ul class="nav-list">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li class="has-drop"><a href="services.html" class="nav-link ">Services <i class="fas fa-chevron-down nav-caret"></i></a><div class="mega-drop"><div class="mega-inner"><div class="mega-col"><h6>Implant Dentistry</h6><a href="dental-implants.html">Dental Implant</a><a href="dental-implants.html">24–72 Hours Dental Implants</a><a href="services.html">Bridges Dentistry</a></div><div class="mega-col"><h6>Cosmetic</h6><a href="smile-designing.html">Smile Designing</a><a href="services.html">Dental Laminates</a><a href="services.html">Cosmetic Dentistry</a></div><div class="mega-col"><h6>Orthodontics</h6><a href="orthodontics.html">Orthodontics</a><a href="services.html">Clear Aligners</a><a href="services.html">Deep Bite</a></div><div class="mega-col"><h6>General Care</h6><a href="root-canal.html">Root Canal</a><a href="services.html">Extraction</a><a href="services.html">General Dentistry</a><a href="services.html">Pediatric Dentistry</a></div></div></div></li>
+        <li class="has-drop"><a href="about.html" class="nav-link ">About <i class="fas fa-chevron-down nav-caret"></i></a><div class="slim-drop"><a href="about.html">About Clinic</a><a href="dr-shahul.html">Dr. Shahul</a></div></li>
+        <li class="has-drop"><a href="team.html" class="nav-link ">Our Team <i class="fas fa-chevron-down nav-caret"></i></a><div class="slim-drop"><a href="dr-shahul.html">Dr. Shahul – Clinical Director</a><a href="team.html">All Specialists</a></div></li>
+        <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+        <li><a href="blog.html" class="nav-link ">Blog</a></li>
+        <li><a href="contact.html" class="nav-link ">Contact</a></li>
+      </ul></nav>
+      <div class="header-ctas"><a href="tel:+918884645500" class="cta-call"><i class="fas fa-phone-alt"></i> Call Now</a><a href="appointment.html" class="cta-book">Book Appointment</a></div>
+      <button class="hamburger" id="hamburger" onclick="toggleNav()"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="page-hero"><div class="page-hero-inner"><div class="section-eyebrow">Our Work</div><h1>Gallery</h1><nav class="breadcrumb"><a href="../index.html">Home</a><span>/</span>Gallery</nav></div></div>
+  <section class="page-section">
+    <div class="section-wrap">
+      <div class="section-head"><div class="section-eyebrow">Before & After · Clinic · Procedures</div><h2 class="section-title">Our Dental Work Gallery</h2><p class="section-sub">Explore our collection of transformations and treatment procedures.</p><div class="title-line"></div></div>
+      <div class="gallery-tabs" style="justify-content:center;margin-bottom:36px">
+        <button class="g-tab active" onclick="filterGallery('all',this)">All</button>
+        <button class="g-tab" onclick="filterGallery('images',this)">Images</button>
+        <button class="g-tab" onclick="filterGallery('videos',this)">Videos</button>
+      </div>
+      <div class="gallery-page-grid" id="galleryGrid">
+        <div class="gp-item" data-type="images"><img src="https://drssdental.com/img/4.jpeg" alt="Smile Makeover" onerror="this.src='https://via.placeholder.com/420x240/111/fff?text=Smile+Makeover'"/><div class="gp-overlay"><h5>Smile Makeover</h5><p>Complete smile transformation</p></div></div>
+        <div class="gp-item" data-type="images"><img src="https://drssdental.com/img/5.jpeg" alt="Dental Implants" onerror="this.src='https://via.placeholder.com/420x240/222/fff?text=Dental+Implants'"/><div class="gp-overlay"><h5>Dental Implants</h5><p>Advanced implant procedure</p></div></div>
+        <div class="gp-item" data-type="images"><img src="https://drssdental.com/img/6.jpeg" alt="Teeth Whitening" onerror="this.src='https://via.placeholder.com/420x240/333/fff?text=Whitening'"/><div class="gp-overlay"><h5>Teeth Whitening</h5><p>Professional whitening results</p></div></div>
+        <div class="gp-item" data-type="videos"><img src="https://drssdental.com/images/tumbmail/1d.jpg" alt="Clinic Tour" onerror="this.src='https://via.placeholder.com/420x240/111/fff?text=Clinic+Tour'"/><div class="gp-overlay"><i class="fas fa-play-circle g-play"></i><h5>Clinic Tour</h5><p>Virtual tour of our facility</p></div></div>
+        <div class="gp-item" data-type="videos"><img src="https://drssdental.com/images/tumbmail/2d.jpg" alt="Treatment Process" onerror="this.src='https://via.placeholder.com/420x240/222/fff?text=Treatment'"/><div class="gp-overlay"><i class="fas fa-play-circle g-play"></i><h5>Treatment Process</h5><p>Step by step dental procedure</p></div></div>
+        <div class="gp-item" data-type="images"><img src="https://drssdental.com/ba/1.jpeg" alt="Before After 1" onerror="this.src='https://via.placeholder.com/420x240/333/fff?text=Before+After'"/><div class="gp-overlay"><h5>Before &amp; After</h5><p>Remarkable transformation</p></div></div>
+        <div class="gp-item" data-type="images"><img src="https://drssdental.com/ba/2.jpeg" alt="Before After 2" onerror="this.src='https://via.placeholder.com/420x240/111/fff?text=Before+After'"/><div class="gp-overlay"><h5>Before &amp; After</h5><p>Smile restoration</p></div></div>
+        <div class="gp-item" data-type="images"><img src="https://drssdental.com/ba/3.jpeg" alt="Before After 3" onerror="this.src='https://via.placeholder.com/420x240/222/fff?text=Before+After'"/><div class="gp-overlay"><h5>Before &amp; After</h5><p>Full mouth rehab</p></div></div>
+        <div class="gp-item" data-type="images"><img src="https://drssdental.com/ba/4.jpeg" alt="Before After 4" onerror="this.src='https://via.placeholder.com/420x240/333/fff?text=Before+After'"/><div class="gp-overlay"><h5>Before &amp; After</h5><p>Cosmetic transformation</p></div></div>
+        <div class="gp-item" data-type="images"><img src="https://drssdental.com/images/paitents/1.jpeg" alt="Patient 1" onerror="this.src='https://via.placeholder.com/420x240/111/fff?text=Happy+Patient'"/><div class="gp-overlay"><h5>Happy Patient</h5><p>Implant case result</p></div></div>
+        <div class="gp-item" data-type="images"><img src="https://drssdental.com/images/paitents/2.jpeg" alt="Patient 2" onerror="this.src='https://via.placeholder.com/420x240/222/fff?text=Happy+Patient'"/><div class="gp-overlay"><h5>Happy Patient</h5><p>Smile design result</p></div></div>
+        <div class="gp-item" data-type="videos"><img src="https://drssdental.com/images/tumbmail/3d.jpg" alt="Video 3" onerror="this.src='https://via.placeholder.com/420x240/333/fff?text=Video'"/><div class="gp-overlay"><i class="fas fa-play-circle g-play"></i><h5>Patient Testimonial</h5><p>Hear from our patients</p></div></div>
+      </div>
+    </div>
+  </section>
+  <script>
+    function filterGallery(type, btn) {
+      document.querySelectorAll('.g-tab').forEach(t => t.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.gp-item').forEach(item => {
+        if (type === 'all' || item.dataset.type === type) { item.style.display = ''; }
+        else { item.style.display = 'none'; }
+      });
+    }
+  </script>
+  <footer class="site-footer">
+    <div class="footer-wrap">
+      <div class="footer-col brand-col"><div class="footer-brand"><img src="../assets/logo.png" alt="Logo"/><span>Dr. SS Dental Care</span></div><p>Advanced Dental Implant Center committed to the highest quality care.</p><div class="footer-hours"><strong>Working Hours</strong><span>Mon – Sat · 09:00am – 09:00pm</span><span>Sunday · Closed</span></div></div>
+      <div class="footer-col"><h6>Quick Links</h6><ul><li><a href="../index.html">Home</a></li><li><a href="about.html">About Clinic</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li><li><a href="appointment.html">Appointment</a></li></ul></div>
+      <div class="footer-col"><h6>Services</h6><ul><li><a href="dental-implants.html">Dental Implant</a></li><li><a href="root-canal.html">Root Canal</a></li><li><a href="smile-designing.html">Smile Designing</a></li><li><a href="orthodontics.html">Orthodontics</a></li><li><a href="services.html">All Services</a></li></ul></div>
+      <div class="footer-col"><h6>Contact</h6><div class="footer-contact"><i class="fas fa-map-marker-alt"></i><span>#535, 23rd Main Rd, HSR Layout, Bengaluru – 560102</span></div><div class="footer-contact"><i class="fas fa-phone-alt"></i><a href="tel:+918884645500">+91 8884645500</a></div><div class="footer-contact"><i class="fab fa-whatsapp"></i><a href="https://wa.me/918884645500" target="_blank">WhatsApp Us</a></div></div>
+    </div>
+    <div class="footer-bottom"><span>© 2025 Dr. SS Dental Care. All Rights Reserved.</span><span>Designed by <a href="#">Endurance Tech</a></span></div>
+  </footer>
+  <a href="https://wa.me/918884645500" class="wa-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  <script src="../js/pages.js"></script>
+</body>
+</html>
